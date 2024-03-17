@@ -15,8 +15,9 @@ class Counter extends Component{
             counter: this.state.counter + 1,
         })
     }
-
-    decrement() {
+    // Methods
+    /*Event binding*/
+    decrement=() => {
         this.setState({
             counter: this.state.counter -1,
         })
@@ -25,7 +26,9 @@ class Counter extends Component{
         return (<div>
             <h3>Count value is: {this.state.counter} </h3>
             <button onClick={()=>this.increment()}> Increment</button> <br/>
-            <button onClick={()=>this.decrement()}> Decrement</button>
+            {/*Recommended Event binding*/}
+
+            <button onClick={this.decrement}> Decrement</button>
 
         </div>)
 
