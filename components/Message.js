@@ -1,9 +1,12 @@
 import{Component} from 'react'
 
+// class Component
 class Message extends Component {
 render(){
-    return <h1>This is a class Component</h1>
+    //props in class component
+    return <h1>Message: {this.props.messagecontent}</h1>
 }
 }
 
+// exporting component
 export default  Message
