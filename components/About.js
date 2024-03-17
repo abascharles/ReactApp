@@ -3,7 +3,7 @@
 
 function About(props){
     // destructuring objects
-    const{name} = props;
+    const{company} = props;
     return <h2>About our company: {company} </h2>
 }
 

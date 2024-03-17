@@ -4,6 +4,10 @@ import Hello from './components/Hello';
 import Message from './components/Message';
 import Profile from './components/Profile.js';
 import Counter from './components/Counter.js';
+import About from './components/About.js';
+import Resume from './components/Resume.js';
+import FunctionEvent from "./components/FunctionEvent.js";
+import ClassEvent from "./components/ClassEvent";
 
 function App() {
   return (
@@ -18,6 +22,16 @@ function App() {
 
         {/* State Component */}
         <Counter/>
+
+        <About company = 'Codefiti'/>
+
+        <Resume name = 'Abas Charles'/>
+
+        {/* Event handling - Function Event*/}
+        <FunctionEvent/>
+
+        {/* Event handling - Function Event*/}
+        <ClassEvent/>
     </div>
   );
 }
